@@ -9,9 +9,9 @@ import java.util.Map;
 /*
 프로그래머스 코딩테스트 고득점 kit 해시, 문제 5번: 베스트앨범
  */
-public class programmersHashQ5 {
+public class ProgrammersHashQ5 {
     public static void main(String[] args) {
-        programmersHashQ5 solved = new programmersHashQ5();
+        ProgrammersHashQ5 solved = new ProgrammersHashQ5();
         String[] genres = {"classic", "classic", "classic", "classic", "pop"};
         int[] plays = {50, 60, 100, 30, 8000};
         System.out.println(Arrays.toString(solved.solution(genres, plays))); // answer: [4, 2, 1]

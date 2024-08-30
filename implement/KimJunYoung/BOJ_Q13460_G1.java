@@ -1,4 +1,4 @@
-package implement;
+package implement.KimJunYoung;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 /*
 solved by backTracking
  */
-public class _Q13460_G1 {
+public class BOJ_Q13460_G1 {
     private static final char RED = 'R';
     private static final char BLUE = 'B';
     private static final char WALL = '#';

@@ -1,4 +1,4 @@
-package data_structure;
+package data_structure.KimJunYoung;
 import java.util.*;
 
 class ProgrammersHeap {

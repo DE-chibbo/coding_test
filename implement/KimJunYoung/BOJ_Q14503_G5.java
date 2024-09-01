@@ -36,7 +36,7 @@ public class BOJ_Q14503_G5 {
         public void moveBack() {
             int nx = x + (dx[direction] * -1);
             int ny = y + (dy[direction] * -1);
-            if (canMove(nx, ny) && map[nx][ny] != 1) {
+            if (isInBoundary(nx, ny) && map[nx][ny] != 1) {
                 x = nx;
                 y = ny;
                 return;
@@ -54,7 +54,7 @@ public class BOJ_Q14503_G5 {
         public void moveForward() {
             int nx = x + dx[direction];
             int ny = y + dy[direction];
-            if (canMove(nx, ny) && map[nx][ny] == 0) {
+            if (isInBoundary(nx, ny) && map[nx][ny] == 0) {
                 x = nx;
                 y = ny;
             }
@@ -85,10 +85,11 @@ public class BOJ_Q14503_G5 {
             int y = cleaner.y;
             cleaner.clean();
             boolean canClean = false;
+            // search areas in all directions
             for (int i = 0; i < 4; i++) {
                 int nx = x + dx[i];
                 int ny = y + dy[i];
-                if (!canMove(nx, ny)) {
+                if (!isInBoundary(nx, ny)) {
                     continue;
                 }
                 if (map[nx][ny] == 0) {
@@ -106,7 +107,7 @@ public class BOJ_Q14503_G5 {
         System.out.println(result);
     }
 
-    private static boolean canMove(int nx, int ny) {
+    private static boolean isInBoundary(int nx, int ny) {
         return !(nx < 0 || ny < 0 || nx >= N || ny >= M);
     }
 }

@@ -7,6 +7,8 @@ public class LeetCode_Q1781_ {
     public static void main(String[] args) {
         Solution solution = new Solution();
         System.out.println(solution.beautySum("aabcbaa"));
+        System.out.println(solution.beautySum("aaaaaaaaaaaaaa"));
+        System.out.println(solution.beautySum("woqrqcvfdgkrafoqdktsfpeygawfpdlvaylgpxhufpvucmmztjoqmxhegdpeczbtvwrmnwrvlptscwwqbjstanyqbgoagxopvgtlyzsemgktcgciualltsquepotmtszbmejbwbtzlavpxnujdsdyrypfcfcfwdidglybzvzuznytwndidzumoekzuukxtpouudsfcohapfcjjmqwjgcvalzarugmzucheydwsncxgyojnfvgroihfckmbtqewxhuqihplprgyeaqhocivaupdfokwpliziwcmuxnebxeszxbsrmffwwdz"));
     }
     static class Solution {
         public int beautySum(String s) {

@@ -1,7 +1,10 @@
-# 상승 가능성이 높음
-# 불규칙적인 길이의 블록 단위로 정렬되어 있음
+'''
+programmers basic test : passed
+programmers final test : passed
+- all passed
 
-# bisect에 의한 알고리즘과의 효율성 차이는?
+time complexity : O(n^2)
+'''
 
 import heapq
 

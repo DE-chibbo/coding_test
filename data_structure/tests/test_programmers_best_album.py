@@ -1,5 +1,5 @@
 import unittest
-from csh_programmers_stock_price import *
+from ..csh_programmers_best_album import *
 
 class TestSolution(unittest.TestCase):
     def setUp(self):
@@ -7,13 +7,15 @@ class TestSolution(unittest.TestCase):
         self.test_cases = [
             {
                 'creator': 'csh',
-                'prices': [500, 200],
-                'expected_output': [1, 0]
+                'genres': [],
+                'plays': [],
+                'expected_output': []
             },
             {
                 'creator': 'csh',
-                'prices': [1, 2, 3, 2, 3],
-                'expected_output': [4, 3, 1, 1, 0]
+                'genres': ["classic", "pop", "classic", "classic", "pop"],
+                'plays': [500, 600, 150, 800, 2500],
+                'expected_output': [4, 1, 3, 0]
             },
         ]
     
@@ -22,11 +24,12 @@ class TestSolution(unittest.TestCase):
     def test_csh(self):
         test_cases = [case for case in self.test_cases if case['creator'] == 'csh']
         for i, case in enumerate(test_cases):
-            prices = case['prices']
+            genres = case['genres']
+            plays = case['plays']
             expected_output = case['expected_output']
             
             with self.subTest(f"test_case_{i+1}"):
-                self.assertEqual(csh_stock_price_solution(prices), expected_output)
+                self.assertEqual(csh_best_album_solution(genres, plays), expected_output)
 
 
 if __name__ == "__main__":

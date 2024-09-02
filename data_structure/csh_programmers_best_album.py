@@ -1,3 +1,11 @@
+'''
+programmers basic test : passed
+programmers final test : passed
+- all passed
+
+time complexity : O(nlogn)
+'''
+
 def csh_best_album_solution(genres, plays):
     answer = []
     

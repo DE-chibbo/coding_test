@@ -8,3 +8,7 @@
     - [boj 13460](https://www.acmicpc.net/problem/13460)
     - [lc 1781](https://leetcode.com/problems/sum-of-beauty-of-all-substrings/description/)
     - [lc 1604](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/description/)
+
+## 2주차
+- 스택/큐
+  - [프로그래머스 고득점 킷](https://school.programmers.co.kr/learn/courses/30/parts/12081)

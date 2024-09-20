@@ -1,4 +1,4 @@
-package data_structure.KimJunYoung;
+package data_structure.KimJunYoung.stackQueue;
 
 import java.util.*;
 public class ProgrammersStackQueue1 {

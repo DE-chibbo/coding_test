@@ -11,30 +11,33 @@ public class ProgrammersBruteforce7 {
     }
     static class Solution {
         StringBuilder sb = new StringBuilder();
-        int index = 0;
-        int answer = 0;
+        boolean isDone = false;
+//        int answer = 0;
         public int solution(String word) {
             char[] vowels = {'A', 'E', 'I', 'O', 'U'};
-            getIndex(word, vowels);
+            int answer = getIndex(word, vowels, 0);
             return answer;
         }
 
-        public void getIndex(String word, char[] vowels){
+        public int getIndex(String word, char[] vowels, int index){
             if (word.contentEquals(sb)) {
-                answer = index;
-                return;
+                isDone = true;
+                return index;
             }
             if (sb.length() == 5) {
-                return;
+                return index;
             }
 
             for (int i = 0; i < 5; i++) {
                 sb.append(vowels[i]);
                 index++;
-                getIndex(word, vowels);
+                index = getIndex(word, vowels, index);
+                if (isDone) {
+                    return index;
+                }
                 sb = new StringBuilder(sb.substring(0, sb.length() - 1));
             }
-
+            return index;
         }
     }
 }

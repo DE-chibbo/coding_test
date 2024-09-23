@@ -17,3 +17,7 @@
 - 힙/완전탐색
     - [프로그래머스 고득점 킷: 힙](https://school.programmers.co.kr/learn/courses/30/parts/12117)
     - [프로그래머스 고득점 킷: 완전탐색](https://school.programmers.co.kr/learn/courses/30/parts/12230)
+
+## 4주차
+- DFS/BFS
+    - [프로그래머스 고득점 킷: 깊이/너비 우선 탐색](https://school.programmers.co.kr/learn/courses/30/parts/12421)

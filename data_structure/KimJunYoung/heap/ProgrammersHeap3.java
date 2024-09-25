@@ -90,7 +90,6 @@ public class ProgrammersHeap3 {
                     ascQueue.offer(descQueue.poll());
                 }
             }
-
         }
     }
 }
